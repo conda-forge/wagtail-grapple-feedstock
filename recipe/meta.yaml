@@ -1,5 +1,5 @@
 {% set name = "wagtail-grapple" %}
-{% set version = "0.26.0" %}
+{% set version = "0.27.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/wagtail_grapple-{{ version }}.tar.gz
-  sha256: 68be091f7feb95bfbe0377bd03c1814a64a6150ae964ec593670d995f11780e5
+  sha256: 428ce97309212fd63e53ad5c7594a9d6bee460065c9b060ddc2a0bf4e97d95bb
 
 build:
   noarch: python
