@@ -1,5 +1,5 @@
 {% set name = "wagtail-grapple" %}
-{% set version = "0.27.0" %}
+{% set version = "0.28.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/wagtail_grapple-{{ version }}.tar.gz
-  sha256: 428ce97309212fd63e53ad5c7594a9d6bee460065c9b060ddc2a0bf4e97d95bb
+  sha256: 3f89a7ea98ed7fe1348ff10aeac503a510f6cde94cd6e667f738747db8432697
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 1
+  number: 0
 
 requirements:
   host:
@@ -21,7 +21,7 @@ requirements:
     - pip
   run:
     - python >={{ python_min }}
-    - wagtail >=5.2
+    - wagtail >=6.3
     - graphene-django >=3,<4
     - wagtail-headless-preview
 
